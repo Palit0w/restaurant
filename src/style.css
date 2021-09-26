@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --text-color: hsl(180, 32%, 75%);
+  --text-hover: hsl(180, 32%, 35%);
+}
+
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url("pizzabg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.navbar {
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navitem {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-right: 15px;
+  margin-top: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navitem:hover {
+  color: var(--text-hover)
+}
+
+main {
+  margin-top: 20px;
+}
+
+#about {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#about-text {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#talvez {
+  margin-top: 5px;
+  font-size: .8rem;
+  color: var(--text-color);
+  text-align: end;
+}
+
+.slice {
+  height: 25px;
+  width: auto;
+  background-image: url(./slice.png);
+  background-repeat: space;
+  background-size: contain;
+}
