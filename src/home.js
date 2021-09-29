@@ -1,8 +1,7 @@
 function renderHome() {
   const main = document.querySelector('main');
-  //Clear the main
-  const about = document.createElement('div');
-  about.id = "about";
+  const mainContainer = document.createElement('div');
+  mainContainer.id = "main-container";
 
   const aboutText = document.createElement('p');
   aboutText.id = "about-text";
@@ -15,18 +14,10 @@ function renderHome() {
   talvez.id = "talvez";
   talvez.innerText = ".........Tal vez O_O";
 
-  about.append(aboutText, slice, talvez);
-  main.appendChild(about);
+  mainContainer.append(aboutText, slice, talvez);
+  main.appendChild(mainContainer);
 
 }
 
 export default renderHome;
 
-/* 
-
-  <div id="about">
-  <p id="about-text">Las mejores pizzas que vas a comer en tu vida...</p>
-  <div class="slice"></div>
-  <p id="talvez">.........Tal vez O_O</p> 
-
-*/

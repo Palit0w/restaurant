@@ -59,9 +59,9 @@ main {
   margin-top: 20px;
 }
 
-#about {
+#main-container {
   margin: auto;
-  width: 50%;
+  width: 60%;
   padding: 20px;
   border: 2px solid black;
   border-radius: 5px;
@@ -71,11 +71,9 @@ main {
   color: var(--text-color);
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 #talvez {
-  margin-top: 5px;
   font-size: .8rem;
   color: var(--text-color);
   text-align: end;
@@ -87,4 +85,17 @@ main {
   background-image: url(./slice.png);
   background-repeat: space;
   background-size: contain;
+  margin: 10px 0px;
+}
+
+#contact-title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 3rem;
+}
+
+#contact-info {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.5rem;
 }

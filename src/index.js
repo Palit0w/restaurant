@@ -2,6 +2,7 @@ console.log('hola');
 
 import createHeader from "./header";
 import renderHome from "./home";
+import renderContact from "./contact"
 
 function renderFirstLoad() {
   const body = document.querySelector('body');
@@ -28,7 +29,11 @@ navhome.addEventListener('click', (() => {
 }));
 
 const navmenu = document.querySelector('#navmenu');
-const navcontact = document.querySelector('#navcontact');
 
+const navcontact = document.querySelector('#navcontact');
+navcontact.addEventListener('click', (() => {
+  clearMain();
+  renderContact();
+}))
 
 
